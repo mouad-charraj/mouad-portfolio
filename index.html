@@ -7,22 +7,23 @@
     <meta name="author" content="Mouad Charraj" />
     <title>Mouad Charraj | Cybersecurity Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div class="noise" aria-hidden="true"></div>
+    <div class="page-glow page-glow-one"></div>
+    <div class="page-glow page-glow-two"></div>
+
     <header class="site-header">
       <nav class="nav container">
-        <a class="logo" href="#home" aria-label="Back to top"><span>MC</span></a>
+        <a class="logo" href="#home" aria-label="Mouad Charraj home">MC</a>
         <button class="menu-toggle" aria-label="Open navigation menu">☰</button>
         <div class="nav-links">
           <a href="#about">About</a>
           <a href="#experience">Experience</a>
           <a href="#projects">Projects</a>
           <a href="#achievements">Achievements</a>
-          <a href="#skills">Skills</a>
           <a href="#contact">Contact</a>
         </div>
       </nav>
@@ -31,33 +32,30 @@
     <main>
       <section id="home" class="hero section">
         <div class="container hero-grid">
-          <div class="hero-copy reveal">
-            <p class="eyebrow">Cybersecurity Engineering Student · ENSA Marrakech</p>
-            <h1>Building security skills across <span>audit, SOC & offensive labs.</span></h1>
+          <div class="hero-copy">
+            <p class="eyebrow">Cybersecurity Engineering Student</p>
+            <h1>Hi, I’m <span>Mouad Charraj</span>.</h1>
             <p class="hero-text">
-              I’m Mouad Charraj — focused on cybersecurity engineering, IT audit, Active Directory security,
-              CTFs and practical projects that turn theory into measurable security outcomes.
+              I build practical security projects, compete in CTFs, and explore IT audit, SOC operations,
+              mobile security labs, Active Directory security, risk, and compliance.
             </p>
             <div class="hero-actions">
-              <a class="btn primary" href="#projects">Explore projects</a>
+              <a class="btn primary" href="#projects">View projects</a>
               <a class="btn secondary" href="assets/cv_CHARRAJ-Mouad.pdf" target="_blank" rel="noreferrer">Download CV</a>
             </div>
           </div>
 
-          <aside class="security-panel reveal">
-            <div class="panel-top">
-              <p class="terminal-label">mouad@portfolio:~$ whoami</p>
-              <span class="status-dot">available</span>
+          <aside class="hero-panel" aria-label="Cybersecurity profile summary">
+            <div class="panel-topline">
+              <span class="status-dot"></span>
+              <span>Security profile</span>
             </div>
-            <div class="terminal-card">
-              <p><span>&gt;</span> Preparing CRTP</p>
-              <p><span>&gt;</span> EY Morocco audit observation</p>
-              <p><span>&gt;</span> CTF player since Dec 2024</p>
+            <div class="orbit">
+              <div class="orbit-ring"></div>
+              <div class="orbit-core">CRTP</div>
             </div>
-            <div class="radar" aria-hidden="true">
-              <span></span><span></span><span></span>
-              <div class="radar-core">MC</div>
-            </div>
+            <h2>Preparing CRTP</h2>
+            <p>Hands-on offensive security, enterprise environments, and Active Directory attack paths.</p>
             <div class="mini-stats">
               <div><strong>Top 4</strong><span>AISEC National CTF 2025</span></div>
               <div><strong>Winner</strong><span>ESI Code CTF 2025</span></div>
@@ -67,42 +65,40 @@
       </section>
 
       <section id="about" class="section">
-        <div class="container two-columns reveal">
+        <div class="container two-columns">
           <div>
             <p class="eyebrow">About me</p>
-            <h2>A cybersecurity profile with an audit mindset.</h2>
+            <h2>Cybersecurity, audit, and hands-on problem solving.</h2>
           </div>
           <div>
             <p>
-              I am a cybersecurity engineering student at ENSA Marrakech in Cyber Defense Engineering and Embedded
-              Telecommunications Systems. My learning path combines security operations, offensive security labs,
-              IT audit exposure, and CTF practice.
+              I am a cybersecurity engineering student at ENSA Marrakech in Cyber Defense Engineering
+              and Embedded Telecommunications Systems. I enjoy learning by building projects, competing in
+              Capture The Flag challenges, and exploring security operations, risk, and compliance.
             </p>
-            <div class="focus-grid">
-              <article><strong>01</strong><span>Security operations & SIEM</span></article>
-              <article><strong>02</strong><span>Active Directory / CRTP path</span></article>
-              <article><strong>03</strong><span>IT audit, risk & compliance</span></article>
+            <div class="tags">
+              <span>Kali Linux</span><span>Burp Suite</span><span>Wireshark</span><span>SIEM</span>
+              <span>Python</span><span>Docker</span><span>OpenVPN</span><span>Git</span>
             </div>
           </div>
         </div>
       </section>
 
       <section id="experience" class="section muted">
-        <div class="container reveal">
+        <div class="container">
           <p class="eyebrow">Experience & Education</p>
-          <h2>Timeline</h2>
           <div class="timeline">
-            <article class="timeline-item">
+            <article class="timeline-item reveal">
               <span>July 2025</span>
               <h3>Observational Internship — EY Morocco, Casablanca</h3>
               <p>Participated in IT migration reviews, risk identification, security compliance analysis, and immersion in IT audit practices.</p>
             </article>
-            <article class="timeline-item">
+            <article class="timeline-item reveal">
               <span>2024 — Present</span>
               <h3>State Engineering Cycle — ENSA Marrakech</h3>
               <p>Cyber Defense Engineering and Embedded Telecommunications Systems.</p>
             </article>
-            <article class="timeline-item">
+            <article class="timeline-item reveal">
               <span>2022 — 2024</span>
               <h3>Integrated Preparatory Cycle — ENSA Marrakech</h3>
               <p>Engineering preparatory classes.</p>
@@ -112,36 +108,61 @@
       </section>
 
       <section id="projects" class="section">
-        <div class="container reveal">
-          <p class="eyebrow">Projects</p>
-          <h2>Selected work</h2>
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Projects</p>
+            <h2>Projects</h2>
+            <p>Security-focused projects and engineering work combining development, infrastructure, audit logic, and defensive learning.</p>
+          </div>
+
           <div class="cards-grid">
-            <article class="project-card featured">
-              <div class="card-number">01</div>
+            <article class="project-card featured reveal">
+              <div class="project-meta">
+                <span>Featured</span>
+                <span>Mobile Security Lab</span>
+              </div>
+              <h3>VulnLab — Vulnerable Mobile Lab Generator</h3>
+              <p>
+                Educational platform for generating controlled Android security labs, vulnerable-by-design training challenges,
+                student challenge links, exports, and instructor review workflows.
+              </p>
+              <div class="project-tags"><span>Android Security</span><span>Docker</span><span>React</span><span>Node.js</span><span>Training Lab</span></div>
+              <div class="project-actions">
+                <a class="btn small primary" href="https://github.com/Jettleee/apk_vulnerable_generator" target="_blank" rel="noreferrer">GitHub repo</a>
+                <a class="btn small secondary" href="https://vulnlab-portfolio-mobile.vercel.app/" target="_blank" rel="noreferrer">Project portfolio</a>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-meta"><span>01</span><span>SOC</span></div>
               <h3>Automated Cloud-Based SOC</h3>
               <p>Designed an automated SOC hosted in the cloud for monitoring and incident handling.</p>
               <div class="project-tags"><span>Cloud</span><span>SOC</span><span>SIEM</span><span>Automation</span></div>
             </article>
-            <article class="project-card">
-              <div class="card-number">02</div>
+
+            <article class="project-card reveal">
+              <div class="project-meta"><span>02</span><span>Network Security</span></div>
               <h3>OpenVPN Remote VPN Implementation</h3>
               <p>Implemented a remote VPN architecture using OpenVPN, GNS3 and routing concepts.</p>
               <div class="project-tags"><span>OpenVPN</span><span>GNS3</span><span>Routing</span></div>
             </article>
-            <article class="project-card">
-              <div class="card-number">03</div>
+
+            <article class="project-card reveal">
+              <div class="project-meta"><span>03</span><span>Detection</span></div>
               <h3>Ransomware Behavior Simulator & Detection</h3>
               <p>Developed a Python simulator and detection tool improved with machine learning classification.</p>
               <div class="project-tags"><span>Python</span><span>ML</span><span>scikit-learn</span></div>
             </article>
-            <article class="project-card">
-              <div class="card-number">04</div>
+
+            <article class="project-card reveal">
+              <div class="project-meta"><span>04</span><span>Web App</span></div>
               <h3>Real-time Stock Management System</h3>
               <p>Built a stock management web application with real-time inventory tracking features.</p>
               <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span><span>MySQL</span></div>
             </article>
-            <article class="project-card">
-              <div class="card-number">05</div>
+
+            <article class="project-card reveal">
+              <div class="project-meta"><span>05</span><span>Secure Platform</span></div>
               <h3>Cybersecurity Service Marketplace</h3>
               <p>Created a marketplace concept with secure authentication, certificate generation and encryption.</p>
               <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
@@ -151,21 +172,20 @@
       </section>
 
       <section id="achievements" class="section muted">
-        <div class="container reveal">
+        <div class="container">
           <p class="eyebrow">Competitions & Clubs</p>
-          <h2>Proof through practice</h2>
           <div class="achievement-grid">
-            <article>
+            <article class="reveal">
               <strong>Top 4</strong>
               <h3>AISEC National CTF 2025</h3>
               <p>Ranked among the top teams in a national CTF competition.</p>
             </article>
-            <article>
+            <article class="reveal">
               <strong>Winner</strong>
               <h3>ESI Code CTF 2025</h3>
               <p>Winning team at ESI Code CTF in Rabat.</p>
             </article>
-            <article>
+            <article class="reveal">
               <strong>Active Member</strong>
               <h3>GCDSTE Club & ENSA Union</h3>
               <p>Competition cell member preparing for national cybersecurity events.</p>
@@ -175,15 +195,14 @@
       </section>
 
       <section id="skills" class="section">
-        <div class="container reveal">
+        <div class="container">
           <p class="eyebrow">Skills</p>
-          <h2>Technical stack</h2>
           <div class="skills-grid">
-            <div><h3>Programming</h3><p>HTML5, CSS3, JavaScript, PHP, Python, C, SQL</p></div>
-            <div><h3>Databases</h3><p>MySQL, Oracle SQL</p></div>
-            <div><h3>Security tools</h3><p>Kali Linux, Wireshark, Burp Suite, Autopsy, Ghidra, Fortinet, Splunk, Wazuh</p></div>
-            <div><h3>DevOps & Management</h3><p>Git, Docker, UML, Agile</p></div>
-            <div><h3>Languages</h3><p>Arabic native, French proficient, English proficient</p></div>
+            <div class="reveal"><h3>Languages</h3><p>HTML5, CSS3, JavaScript, PHP, Python, C, SQL</p></div>
+            <div class="reveal"><h3>Databases</h3><p>MySQL, Oracle SQL</p></div>
+            <div class="reveal"><h3>Security tools</h3><p>Kali Linux, Wireshark, Burp Suite, Autopsy, Ghidra, Fortinet, Splunk, Wazuh</p></div>
+            <div class="reveal"><h3>DevOps & Management</h3><p>Git, Docker, UML, Agile</p></div>
+            <div class="reveal"><h3>Languages</h3><p>Arabic native, French proficient, English proficient</p></div>
           </div>
         </div>
       </section>
@@ -204,7 +223,7 @@
 
     <footer>
       <div class="container footer-content">
-        <p>© <span id="year"></span> Mouad Charraj. Designed as a cybersecurity portfolio.</p>
+        <p>© <span id="year"></span> Mouad Charraj. All rights reserved.</p>
         <a href="#home">Back to top ↑</a>
       </div>
     </footer>

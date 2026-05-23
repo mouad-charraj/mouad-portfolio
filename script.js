@@ -1,5 +1,8 @@
 const menuToggle = document.querySelector('.menu-toggle');
 const navLinks = document.querySelector('.nav-links');
+const year = document.querySelector('#year');
+
+year.textContent = new Date().getFullYear();
 
 menuToggle.addEventListener('click', () => {
   navLinks.classList.toggle('open');
@@ -9,13 +12,13 @@ document.querySelectorAll('.nav-links a').forEach((link) => {
   link.addEventListener('click', () => navLinks.classList.remove('open'));
 });
 
-document.querySelector('#year').textContent = new Date().getFullYear();
-
-const reveals = document.querySelectorAll('.reveal');
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-    if (entry.isIntersecting) entry.target.classList.add('visible');
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    }
   });
 }, { threshold: 0.12 });
 
-reveals.forEach((item) => observer.observe(item));
+document.querySelectorAll('.reveal').forEach((element) => observer.observe(element));
